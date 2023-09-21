@@ -2,6 +2,10 @@
 
 require __DIR__ . '/../src/bootstrap.php';
 
+if (is_post_request()) {
+    //...
+}
+
 ?>
 
 <?php view('header', ['title' => 'Register']); ?>
